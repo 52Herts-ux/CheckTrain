@@ -1,4 +1,4 @@
-# CheckTrain Skill for OpenClaw
+# 12306 Smart Query for OpenClaw
 
 　　一个专为 OpenClaw 打造的智能 12306 火车票查询技能，支持直达优先、指定中转、多站换乘以及智能多跳自动规划，特别优化了普速列车（ZTK）的复杂路线探索，并内置本地图缓存机制，让重复查询秒级响应。
 
@@ -28,13 +28,13 @@
 
 ### 1. 克隆或下载本技能
 
-　　将整个技能文件夹放入 OpenClaw 的 skills 目录（例如 `~/.openclaw/skills/CheckTrain`​）。
+　　将整个技能文件夹放入 OpenClaw 的 skills 目录（例如 `~/.openclaw/skills/12306-smart-query`​）。
 
 ### 2. 安装 Python 依赖
 
 ```bash
-git clone https://github.com/52Herts-ux/CheckTrain.git
-cd CheckTrain
+git clone https://github.com/52Herts-ux/12306-smart-query.git
+cd 12306-smart-query
 pip install -r requirements.txt
 ```
 
@@ -44,10 +44,10 @@ pip install -r requirements.txt
 
 ```bash
 # 默认监听 127.0.0.1:8080，仅限本地访问（安全）
-npx -y 12306-mcp --port 8080
+npx -y 12306-mcp --host localhost --port 8080
 ```
-
 　　若需长期后台运行，可配合 `pm2`​ 或 `screen`​。
+  
 
 ### 4. 修改技能配置
 
@@ -108,7 +108,7 @@ python scripts/train_query.py 新乡 昆明 --auto-plan --train-type ZTK --max-h
 ## 📁 文件结构
 
 ```txt
-CheckTrain/
+12306-smart-query/
 ├── SKILL.md                 # OpenClaw 技能定义文件
 ├── README.md                # 本说明文档
 ├── requirements.txt         # Python 依赖列表
