@@ -1,0 +1,1953 @@
+{
+  "graph": {
+    "XXF": {
+      "LYF": [
+        {
+          "train_code": "T231",
+          "depart_time": "00:56",
+          "arrive_time": "03:00",
+          "duration": "02:04",
+          "seats": {
+            "硬座": "有票 32.5元",
+            "软卧": "无票 118.5元",
+            "硬卧": "剩余1张票 78.5元",
+            "无座": "无票 32.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816508.9576137,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K395",
+          "depart_time": "02:22",
+          "arrive_time": "05:23",
+          "duration": "03:01",
+          "seats": {
+            "硬座": "剩余18张票 32.5元",
+            "软卧": "无票 118.5元",
+            "硬卧": "剩余1张票 78.5元",
+            "无座": "有票 32.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816198.2874527,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K269",
+          "depart_time": "04:14",
+          "arrive_time": "07:25",
+          "duration": "03:11",
+          "seats": {
+            "硬座": "有票 32.5元",
+            "软卧": "无票 118.5元",
+            "硬卧": "无票 78.5元",
+            "无座": "无票 32.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816508.9641452,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K385",
+          "depart_time": "11:43",
+          "arrive_time": "14:57",
+          "duration": "03:14",
+          "seats": {
+            "硬卧": "有票 78.5元",
+            "软卧": "无票 118.5元",
+            "硬座": "无票 32.5元",
+            "无座": "有票 32.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816508.97046,
+          "train_type": "Z"
+        }
+      ],
+      "XAY": [
+        {
+          "train_code": "T231",
+          "depart_time": "00:56",
+          "arrive_time": "07:35",
+          "duration": "06:39",
+          "seats": {
+            "硬座": "有票 81元",
+            "软卧": "无票 222元",
+            "硬卧": "无票 144元",
+            "无座": "有票 81元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816198.7316515,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K395",
+          "depart_time": "02:22",
+          "arrive_time": "11:22",
+          "duration": "09:00",
+          "seats": {
+            "硬座": "剩余12张票 81元",
+            "软卧": "无票 222元",
+            "硬卧": "无票 144元",
+            "无座": "有票 81元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816198.7363334,
+          "train_type": "Z"
+        }
+      ],
+      "WCN": [
+        {
+          "train_code": "K457",
+          "depart_time": "10:02",
+          "arrive_time": "17:20",
+          "duration": "07:18",
+          "seats": {
+            "硬卧": "无票 152元",
+            "软卧": "无票 233元",
+            "硬座": "无票 86元",
+            "无座": "无票 86元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816200.2404919,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T369",
+          "depart_time": "10:34",
+          "arrive_time": "17:26",
+          "duration": "06:52",
+          "seats": {
+            "硬座": "无票 86元",
+            "软卧": "无票 233元",
+            "硬卧": "无票 152元",
+            "无座": "无票 86元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816200.2434738,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K599",
+          "depart_time": "13:04",
+          "arrive_time": "21:14",
+          "duration": "08:10",
+          "seats": {
+            "硬座": "无票 86元",
+            "软卧": "剩余1张票 233元",
+            "硬卧": "剩余16张票 152元",
+            "无座": "有票 86元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816200.246188,
+          "train_type": "Z"
+        }
+      ],
+      "HHQ": [
+        {
+          "train_code": "K107",
+          "depart_time": "15:43",
+          "arrive_time": "12:08",
+          "duration": "20:25",
+          "seats": {
+            "硬座": "有票 177.5元",
+            "软卧": "无票 476.5元",
+            "硬卧": "有票 304.5元",
+            "无座": "无票 177.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816514.9537108,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K267",
+          "depart_time": "22:02",
+          "arrive_time": "20:48",
+          "duration": "22:46",
+          "seats": {
+            "硬座": "无票 198元",
+            "软卧": "无票 530元",
+            "硬卧": "有票 337元",
+            "无座": "无票 198元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816514.962399,
+          "train_type": "Z"
+        }
+      ],
+      "GIW": [
+        {
+          "train_code": "K107",
+          "depart_time": "15:43",
+          "arrive_time": "18:48",
+          "duration": "27:05",
+          "seats": {
+            "硬座": "有票 217元",
+            "软卧": "剩余11张票 585元",
+            "硬卧": "有票 370元",
+            "无座": "无票 217元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816515.6735964,
+          "train_type": "Z"
+        }
+      ],
+      "CDW": [
+        {
+          "train_code": "K257",
+          "depart_time": "03:29",
+          "arrive_time": "04:53",
+          "duration": "25:24",
+          "seats": {
+            "硬卧": "有票 337元",
+            "软卧": "剩余5张票 530元",
+            "硬座": "有票 198元",
+            "无座": "无票 198元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816517.0409799,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K385",
+          "depart_time": "11:43",
+          "arrive_time": "08:08",
+          "duration": "20:25",
+          "seats": {
+            "硬卧": "有票 347.5元",
+            "软卧": "无票 542.5元",
+            "硬座": "无票 198.5元",
+            "无座": "有票 198.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816517.0485027,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K117",
+          "depart_time": "19:51",
+          "arrive_time": "19:16",
+          "duration": "23:25",
+          "seats": {
+            "硬座": "有票 198元",
+            "软卧": "剩余8张票 530元",
+            "硬卧": "有票 337元",
+            "无座": "无票 198元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816517.055102,
+          "train_type": "Z"
+        }
+      ],
+      "CQW": [
+        {
+          "train_code": "K507",
+          "depart_time": "15:00",
+          "arrive_time": "08:33",
+          "duration": "17:33",
+          "seats": {
+            "硬卧": "无票 280.5元",
+            "软卧": "无票 438.5元",
+            "硬座": "无票 163.5元",
+            "无座": "无票 163.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816517.541387,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T9",
+          "depart_time": "20:58",
+          "arrive_time": "15:39",
+          "duration": "18:41",
+          "seats": {
+            "硬座": "有票 173.5元",
+            "软卧": "无票 464.5元",
+            "硬卧": "无票 296.5元",
+            "无座": "无票 173.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816517.5489206,
+          "train_type": "Z"
+        }
+      ],
+      "SJP": [
+        {
+          "train_code": "K234",
+          "depart_time": "02:18",
+          "arrive_time": "06:14",
+          "duration": "03:56",
+          "seats": {
+            "硬卧": "剩余11张票 96.5元",
+            "软卧": "剩余2张票 146.5元",
+            "硬座": "有票 50.5元",
+            "无座": "有票 50.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816207.915059,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z326",
+          "depart_time": "03:26",
+          "arrive_time": "07:01",
+          "duration": "03:35",
+          "seats": {
+            "硬座": "无票 50.5元",
+            "软卧": "无票 146.5元",
+            "硬卧": "无票 96.5元",
+            "无座": "剩余5张票 50.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816207.917543,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K268",
+          "depart_time": "03:58",
+          "arrive_time": "08:38",
+          "duration": "04:40",
+          "seats": {
+            "硬座": "无票 50.5元",
+            "硬卧": "剩余3张票 96.5元",
+            "软卧": "无票 146.5元",
+            "无座": "有票 50.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816207.9206045,
+          "train_type": "Z"
+        }
+      ],
+      "BXP": [
+        {
+          "train_code": "K268",
+          "depart_time": "03:58",
+          "arrive_time": "12:21",
+          "duration": "08:23",
+          "seats": {
+            "硬座": "有票 81元",
+            "硬卧": "有票 144元",
+            "软卧": "剩余1张票 222元",
+            "无座": "无票 81元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816520.3406813,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z336",
+          "depart_time": "05:05",
+          "arrive_time": "10:36",
+          "duration": "05:31",
+          "seats": {
+            "硬座": "有票 81元",
+            "软卧": "无票 222元",
+            "硬卧": "有票 144元",
+            "无座": "无票 81元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816520.347353,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K474",
+          "depart_time": "06:18",
+          "arrive_time": "15:10",
+          "duration": "08:52",
+          "seats": {
+            "硬座": "有票 81元",
+            "软卧": "剩余6张票 222元",
+            "硬卧": "剩余11张票 144元",
+            "无座": "无票 81元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816520.35495,
+          "train_type": "Z"
+        }
+      ],
+      "ZZF": [
+        {
+          "train_code": "K2155",
+          "depart_time": "03:23",
+          "arrive_time": "04:44",
+          "duration": "01:21",
+          "seats": {
+            "硬座": "有票 12.5元",
+            "软卧": "有票 89.5元",
+            "硬卧": "有票 58.5元",
+            "无座": "有票 12.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816507.7512674,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K257",
+          "depart_time": "03:29",
+          "arrive_time": "04:50",
+          "duration": "01:21",
+          "seats": {
+            "硬卧": "有票 58.5元",
+            "软卧": "剩余5张票 89.5元",
+            "硬座": "有票 12.5元",
+            "无座": "无票 12.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816507.7592878,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K401",
+          "depart_time": "04:50",
+          "arrive_time": "05:47",
+          "duration": "00:57",
+          "seats": {
+            "硬卧": "有票 58.5元",
+            "软卧": "无票 89.5元",
+            "硬座": "有票 12.5元",
+            "无座": "无票 12.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816507.7647996,
+          "train_type": "Z"
+        }
+      ],
+      "WHN": [
+        {
+          "train_code": "K457",
+          "depart_time": "10:02",
+          "arrive_time": "17:20",
+          "duration": "07:18",
+          "seats": {
+            "硬卧": "有票 152元",
+            "软卧": "剩余4张票 233元",
+            "硬座": "无票 86元",
+            "无座": "无票 86元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816510.520185,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T369",
+          "depart_time": "10:34",
+          "arrive_time": "17:26",
+          "duration": "06:52",
+          "seats": {
+            "硬座": "无票 86元",
+            "软卧": "剩余3张票 233元",
+            "硬卧": "有票 152元",
+            "无座": "有票 86元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816510.5271156,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K599",
+          "depart_time": "13:04",
+          "arrive_time": "21:14",
+          "duration": "08:10",
+          "seats": {
+            "硬座": "有票 86元",
+            "软卧": "剩余16张票 233元",
+            "硬卧": "有票 152元",
+            "无座": "无票 86元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816510.533122,
+          "train_type": "Z"
+        }
+      ],
+      "HKN": [
+        {
+          "train_code": "K457",
+          "depart_time": "10:02",
+          "arrive_time": "17:20",
+          "duration": "07:18",
+          "seats": {
+            "硬卧": "有票 152元",
+            "软卧": "剩余4张票 233元",
+            "硬座": "无票 86元",
+            "无座": "无票 86元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816512.0064754,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T369",
+          "depart_time": "10:34",
+          "arrive_time": "17:26",
+          "duration": "06:52",
+          "seats": {
+            "硬座": "无票 86元",
+            "软卧": "剩余3张票 233元",
+            "硬卧": "有票 152元",
+            "无座": "有票 86元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816512.0136273,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K599",
+          "depart_time": "13:04",
+          "arrive_time": "21:14",
+          "duration": "08:10",
+          "seats": {
+            "硬座": "有票 86元",
+            "软卧": "剩余16张票 233元",
+            "硬卧": "有票 152元",
+            "无座": "无票 86元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816512.0233068,
+          "train_type": "Z"
+        }
+      ],
+      "HYQ": [
+        {
+          "train_code": "K457",
+          "depart_time": "10:02",
+          "arrive_time": "23:55",
+          "duration": "13:53",
+          "seats": {
+            "硬卧": "无票 254.5元",
+            "软卧": "无票 398.5元",
+            "硬座": "无票 148.5元",
+            "无座": "无票 148.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816514.4310446,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T369",
+          "depart_time": "10:34",
+          "arrive_time": "23:22",
+          "duration": "12:48",
+          "seats": {
+            "硬座": "无票 148.5元",
+            "软卧": "剩余3张票 398.5元",
+            "硬卧": "有票 254.5元",
+            "无座": "有票 148.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816514.441475,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K599",
+          "depart_time": "13:04",
+          "arrive_time": "03:54",
+          "duration": "14:50",
+          "seats": {
+            "硬座": "有票 148.5元",
+            "软卧": "剩余16张票 398.5元",
+            "硬卧": "有票 254.5元",
+            "无座": "无票 148.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816514.448826,
+          "train_type": "Z"
+        }
+      ],
+      "BJP": [
+        {
+          "train_code": "K268",
+          "depart_time": "03:58",
+          "arrive_time": "12:21",
+          "duration": "08:23",
+          "seats": {
+            "硬座": "有票 81元",
+            "硬卧": "有票 144元",
+            "软卧": "剩余1张票 222元",
+            "无座": "无票 81元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816519.813246,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z336",
+          "depart_time": "05:05",
+          "arrive_time": "10:36",
+          "duration": "05:31",
+          "seats": {
+            "硬座": "有票 81元",
+            "软卧": "无票 222元",
+            "硬卧": "有票 144元",
+            "无座": "无票 81元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816519.8197782,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K474",
+          "depart_time": "06:18",
+          "arrive_time": "15:10",
+          "duration": "08:52",
+          "seats": {
+            "硬座": "有票 81元",
+            "软卧": "剩余6张票 222元",
+            "硬卧": "剩余11张票 144元",
+            "无座": "无票 81元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816519.826298,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "LYF": {
+      "ZZQ": [
+        {
+          "train_code": "Z136",
+          "depart_time": "03:05",
+          "arrive_time": "13:52",
+          "duration": "10:47",
+          "seats": {
+            "硬卧": "无票 238.5元",
+            "软卧": "无票 372.5元",
+            "硬座": "无票 138.5元",
+            "高级软卧": "无票 684.5元",
+            "无座": "有票 138.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816217.092581,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K84",
+          "depart_time": "15:34",
+          "arrive_time": "05:11",
+          "duration": "13:37",
+          "seats": {
+            "硬座": "有票 135.5元",
+            "软卧": "无票 360.5元",
+            "硬卧": "剩余7张票 232.5元",
+            "无座": "有票 135.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816217.0935593,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K538",
+          "depart_time": "18:20",
+          "arrive_time": "08:42",
+          "duration": "14:22",
+          "seats": {
+            "硬座": "剩余2张票 138.5元",
+            "软卧": "无票 372.5元",
+            "硬卧": "无票 238.5元",
+            "无座": "有票 138.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816217.0960698,
+          "train_type": "Z"
+        }
+      ],
+      "HYQ": [
+        {
+          "train_code": "Z136",
+          "depart_time": "03:05",
+          "arrive_time": "15:18",
+          "duration": "12:13",
+          "seats": {
+            "硬卧": "无票 261.5元",
+            "软卧": "无票 409.5元",
+            "硬座": "无票 152.5元",
+            "高级软卧": "无票 755.5元",
+            "无座": "有票 152.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816217.715166,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K240",
+          "depart_time": "11:28",
+          "arrive_time": "03:37",
+          "duration": "16:09",
+          "seats": {
+            "硬卧": "无票 254.5元",
+            "软卧": "无票 398.5元",
+            "硬座": "无票 148.5元",
+            "无座": "有票 148.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816217.7190366,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K228",
+          "depart_time": "13:33",
+          "arrive_time": "05:33",
+          "duration": "16:00",
+          "seats": {
+            "硬卧": "无票 261.5元",
+            "软卧": "无票 409.5元",
+            "硬座": "无票 152.5元",
+            "无座": "无票 152.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816217.7230358,
+          "train_type": "Z"
+        }
+      ],
+      "HFH": [
+        {
+          "train_code": "K2908",
+          "depart_time": "03:13",
+          "arrive_time": "13:46",
+          "duration": "10:33",
+          "seats": {
+            "硬座": "无票 98元",
+            "软卧": "无票 263元",
+            "硬卧": "无票 171元",
+            "无座": "有票 98元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816223.0933404,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K608",
+          "depart_time": "18:50",
+          "arrive_time": "04:47",
+          "duration": "09:57",
+          "seats": {
+            "硬卧": "无票 171元",
+            "软卧": "无票 263元",
+            "硬座": "有票 98元",
+            "无座": "有票 98元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816223.0993452,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K168",
+          "depart_time": "19:19",
+          "arrive_time": "07:09",
+          "duration": "11:50",
+          "seats": {
+            "硬座": "有票 105元",
+            "软卧": "剩余8张票 285元",
+            "硬卧": "无票 184元",
+            "无座": "有票 105元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816223.1024232,
+          "train_type": "Z"
+        }
+      ],
+      "XAY": [
+        {
+          "train_code": "Z127",
+          "depart_time": "00:10",
+          "arrive_time": "04:39",
+          "duration": "04:29",
+          "seats": {
+            "硬座": "有票 54.5元",
+            "软卧": "剩余19张票 155.5元",
+            "硬卧": "有票 100.5元",
+            "无座": "有票 54.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816534.312417,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T55",
+          "depart_time": "00:18",
+          "arrive_time": "04:59",
+          "duration": "04:41",
+          "seats": {
+            "硬座": "有票 54.5元",
+            "软卧": "剩余4张票 155.5元",
+            "硬卧": "有票 100.5元",
+            "无座": "剩余2张票 54.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816534.3199296,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T197",
+          "depart_time": "00:32",
+          "arrive_time": "05:11",
+          "duration": "04:39",
+          "seats": {
+            "硬卧": "无票 100.5元",
+            "软卧": "无票 155.5元",
+            "硬座": "有票 54.5元",
+            "无座": "有票 54.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816534.3275695,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "XAY": {
+      "HKN": [
+        {
+          "train_code": "K228",
+          "depart_time": "07:38",
+          "arrive_time": "22:50",
+          "duration": "15:12",
+          "seats": {
+            "硬卧": "无票 232.5元",
+            "软卧": "无票 360.5元",
+            "硬座": "无票 135.5元",
+            "无座": "无票 135.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816225.2002423,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K84",
+          "depart_time": "10:20",
+          "arrive_time": "00:02",
+          "duration": "13:42",
+          "seats": {
+            "硬座": "有票 128.5元",
+            "软卧": "剩余4张票 348.5元",
+            "硬卧": "有票 222.5元",
+            "无座": "有票 128.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816225.2084064,
+          "train_type": "Z"
+        }
+      ],
+      "CSQ": [
+        {
+          "train_code": "K2098",
+          "depart_time": "05:52",
+          "arrive_time": "22:38",
+          "duration": "16:46",
+          "seats": {
+            "硬座": "有票 148.5元",
+            "软卧": "无票 398.5元",
+            "硬卧": "剩余13张票 254.5元",
+            "无座": "有票 148.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816225.8134835,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K228",
+          "depart_time": "07:38",
+          "arrive_time": "03:17",
+          "duration": "19:39",
+          "seats": {
+            "硬卧": "无票 296.5元",
+            "软卧": "无票 464.5元",
+            "硬座": "无票 173.5元",
+            "无座": "无票 173.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816225.8180165,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K84",
+          "depart_time": "09:55",
+          "arrive_time": "04:12",
+          "duration": "18:17",
+          "seats": {
+            "硬座": "有票 168.5元",
+            "软卧": "无票 450.5元",
+            "硬卧": "剩余7张票 288.5元",
+            "无座": "有票 168.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816225.8220203,
+          "train_type": "Z"
+        }
+      ],
+      "BJP": [
+        {
+          "train_code": "K546",
+          "depart_time": "00:12",
+          "arrive_time": "16:48",
+          "duration": "16:36",
+          "seats": {
+            "硬卧": "无票 268.5元",
+            "软卧": "无票 422.5元",
+            "硬座": "无票 156.5元",
+            "无座": "有票 156.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816227.4640539,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z180",
+          "depart_time": "00:27",
+          "arrive_time": "13:32",
+          "duration": "13:05",
+          "seats": {
+            "硬卧": "无票 254.5元",
+            "软卧": "无票 398.5元",
+            "硬座": "无票 148.5元",
+            "无座": "无票 148.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816227.4675853,
+          "train_type": "Z"
+        }
+      ],
+      "ZDN": [
+        {
+          "train_code": "K228",
+          "depart_time": "07:38",
+          "arrive_time": "18:08",
+          "duration": "10:30",
+          "seats": {
+            "硬卧": "有票 171元",
+            "软卧": "无票 263元",
+            "硬座": "无票 98元",
+            "无座": "无票 98元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816227.970357,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K84",
+          "depart_time": "10:20",
+          "arrive_time": "20:14",
+          "duration": "09:54",
+          "seats": {
+            "硬座": "有票 91元",
+            "软卧": "剩余5张票 243元",
+            "硬卧": "有票 158元",
+            "无座": "有票 91元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816227.9779782,
+          "train_type": "Z"
+        }
+      ],
+      "KMM": [
+        {
+          "train_code": "K694",
+          "depart_time": "07:09",
+          "arrive_time": "06:00",
+          "duration": "22:51",
+          "seats": {
+            "硬卧": "无票 343元",
+            "软卧": "无票 542元",
+            "硬座": "无票 201元",
+            "无座": "无票 201元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816561.2093647,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "WCN": {
+      "KMM": [
+        {
+          "train_code": "Z325",
+          "depart_time": "08:47",
+          "arrive_time": "10:50",
+          "duration": "26:03",
+          "seats": {
+            "硬座": "无票 217元",
+            "软卧": "剩余1张票 585元",
+            "硬卧": "无票 370元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816231.482103,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "09:45",
+          "arrive_time": "10:36",
+          "duration": "24:51",
+          "seats": {
+            "硬卧": "无票 370元",
+            "软卧": "无票 585元",
+            "硬座": "无票 217元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816231.4861867,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "22:33",
+          "arrive_time": "22:02",
+          "duration": "23:29",
+          "seats": {
+            "硬卧": "无票 370元",
+            "软卧": "无票 585元",
+            "硬座": "无票 217元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816231.4905076,
+          "train_type": "Z"
+        }
+      ],
+      "NCG": [
+        {
+          "train_code": "T145",
+          "depart_time": "01:01",
+          "arrive_time": "09:43",
+          "duration": "08:42",
+          "seats": {
+            "硬座": "无票 105元",
+            "软卧": "无票 285元",
+            "硬卧": "无票 184元",
+            "无座": "有票 105元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816231.978845,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z217",
+          "depart_time": "02:09",
+          "arrive_time": "05:32",
+          "duration": "03:23",
+          "seats": {
+            "硬座": "剩余12张票 51.5元",
+            "软卧": "无票 149.5元",
+            "硬卧": "无票 97.5元",
+            "无座": "有票 51.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816231.9872687,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K641",
+          "depart_time": "02:33",
+          "arrive_time": "07:03",
+          "duration": "04:30",
+          "seats": {
+            "硬座": "有票 51.5元",
+            "软卧": "无票 149.5元",
+            "硬卧": "剩余1张票 97.5元",
+            "无座": "有票 51.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816231.9922535,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "HHQ": {
+      "ZZF": [
+        {
+          "train_code": "Z162",
+          "depart_time": "09:16",
+          "arrive_time": "00:45",
+          "duration": "15:29",
+          "seats": {
+            "硬卧": "无票 288.5元",
+            "软卧": "无票 450.5元",
+            "硬座": "无票 168.5元",
+            "无座": "有票 168.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816232.4742076,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z326",
+          "depart_time": "10:22",
+          "arrive_time": "01:58",
+          "duration": "15:36",
+          "seats": {
+            "硬座": "无票 168.5元",
+            "软卧": "剩余1张票 450.5元",
+            "硬卧": "无票 288.5元",
+            "无座": "有票 168.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816232.4795585,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z78",
+          "depart_time": "14:49",
+          "arrive_time": "05:42",
+          "duration": "14:53",
+          "seats": {
+            "硬座": "无票 168.5元",
+            "软卧": "剩余1张票 450.5元",
+            "硬卧": "无票 288.5元",
+            "无座": "有票 168.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816232.4835718,
+          "train_type": "Z"
+        }
+      ],
+      "KMM": [
+        {
+          "train_code": "K1235",
+          "depart_time": "05:37",
+          "arrive_time": "22:22",
+          "duration": "16:45",
+          "seats": {
+            "硬卧": "剩余5张票 238.5元",
+            "软卧": "剩余1张票 372.5元",
+            "硬座": "有票 138.5元",
+            "无座": "有票 138.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816550.207993,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "08:40",
+          "arrive_time": "22:02",
+          "duration": "13:22",
+          "seats": {
+            "硬卧": "有票 238.5元",
+            "软卧": "无票 372.5元",
+            "硬座": "有票 138.5元",
+            "无座": "剩余7张票 138.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816550.2167873,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K79",
+          "depart_time": "11:48",
+          "arrive_time": "05:19",
+          "duration": "17:31",
+          "seats": {
+            "硬卧": "无票 238.5元",
+            "软卧": "无票 372.5元",
+            "硬座": "有票 138.5元",
+            "无座": "无票 138.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816550.2237911,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "GIW": {
+      "WHN": [
+        {
+          "train_code": "Z162",
+          "depart_time": "02:44",
+          "arrive_time": "19:56",
+          "duration": "17:12",
+          "seats": {
+            "硬卧": "无票 280.5元",
+            "软卧": "无票 438.5元",
+            "硬座": "无票 163.5元",
+            "无座": "有票 163.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816234.6970527,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z326",
+          "depart_time": "03:23",
+          "arrive_time": "21:05",
+          "duration": "17:42",
+          "seats": {
+            "硬座": "无票 163.5元",
+            "软卧": "剩余1张票 438.5元",
+            "硬卧": "无票 280.5元",
+            "无座": "有票 163.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816234.7021196,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z78",
+          "depart_time": "08:03",
+          "arrive_time": "00:54",
+          "duration": "16:51",
+          "seats": {
+            "硬座": "剩余12张票 163.5元",
+            "软卧": "剩余1张票 438.5元",
+            "硬卧": "剩余6张票 280.5元",
+            "无座": "有票 163.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816234.7066116,
+          "train_type": "Z"
+        }
+      ],
+      "KMM": [
+        {
+          "train_code": "Z53",
+          "depart_time": "03:16",
+          "arrive_time": "10:36",
+          "duration": "07:20",
+          "seats": {
+            "硬卧": "剩余20张票 152元",
+            "软卧": "无票 233元",
+            "硬座": "有票 86元",
+            "无座": "有票 86元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816235.2722573,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z325",
+          "depart_time": "03:50",
+          "arrive_time": "10:50",
+          "duration": "07:00",
+          "seats": {
+            "硬座": "剩余1张票 86元",
+            "软卧": "有票 233元",
+            "硬卧": "剩余1张票 152元",
+            "无座": "有票 86元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816235.277787,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K137",
+          "depart_time": "03:57",
+          "arrive_time": "11:31",
+          "duration": "07:34",
+          "seats": {
+            "硬座": "有票 86元",
+            "软卧": "剩余10张票 233元",
+            "硬卧": "剩余18张票 152元",
+            "无座": "有票 86元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816235.2818892,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "CDW": {
+      "KMM": [
+        {
+          "train_code": "Z371",
+          "depart_time": "23:52",
+          "arrive_time": "08:15",
+          "duration": "08:23",
+          "seats": {
+            "硬卧": "无票 207元",
+            "软卧": "无票 324元",
+            "硬座": "无票 119元",
+            "无座": "无票 119元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816553.6751795,
+          "train_type": "Z"
+        }
+      ],
+      "HFH": [
+        {
+          "train_code": "K1158",
+          "depart_time": "07:50",
+          "arrive_time": "05:26",
+          "duration": "21:36",
+          "seats": {
+            "硬座": "有票 208元",
+            "软卧": "剩余11张票 568元",
+            "硬卧": "有票 363元",
+            "无座": "无票 208元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816554.1150436,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "CQW": {
+      "KMM": [
+        {
+          "train_code": "K985",
+          "depart_time": "10:31",
+          "arrive_time": "23:32",
+          "duration": "13:01",
+          "seats": {
+            "硬座": "无票 124元",
+            "软卧": "剩余4张票 336元",
+            "硬卧": "无票 215元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816554.6079228,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K691",
+          "depart_time": "18:13",
+          "arrive_time": "06:00",
+          "duration": "11:47",
+          "seats": {
+            "硬卧": "无票 215元",
+            "软卧": "无票 336元",
+            "硬座": "无票 124元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816554.6158006,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "UMW": {
+      "KMM": [
+        {
+          "train_code": "K79",
+          "depart_time": "00:44",
+          "arrive_time": "05:19",
+          "duration": "04:35",
+          "seats": {
+            "硬卧": "剩余13张票 100.5元",
+            "软卧": "无票 155.5元",
+            "硬座": "有票 54.5元",
+            "无座": "无票 54.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816559.8232439,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K739",
+          "depart_time": "00:58",
+          "arrive_time": "05:31",
+          "duration": "04:33",
+          "seats": {
+            "硬座": "有票 54.5元",
+            "软卧": "无票 155.5元",
+            "硬卧": "剩余12张票 100.5元",
+            "无座": "剩余1张票 54.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816559.8322358,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K691",
+          "depart_time": "01:42",
+          "arrive_time": "06:00",
+          "duration": "04:18",
+          "seats": {
+            "硬卧": "无票 100.5元",
+            "软卧": "无票 155.5元",
+            "硬座": "有票 54.5元",
+            "无座": "有票 54.5元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816559.8397515,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "SJP": {
+      "KMM": [
+        {
+          "train_code": "Z53",
+          "depart_time": "01:11",
+          "arrive_time": "10:36",
+          "duration": "33:25",
+          "seats": {
+            "硬卧": "无票 497.5元",
+            "软卧": "无票 786.5元",
+            "硬座": "无票 293.5元",
+            "无座": "有票 293.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816237.292277,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "13:57",
+          "arrive_time": "22:02",
+          "duration": "32:05",
+          "seats": {
+            "硬卧": "无票 497.5元",
+            "软卧": "无票 786.5元",
+            "硬座": "无票 293.5元",
+            "无座": "有票 293.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816237.2978601,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z325",
+          "depart_time": "23:26",
+          "arrive_time": "10:50",
+          "duration": "35:24",
+          "seats": {
+            "硬座": "无票 293.5元",
+            "软卧": "无票 786.5元",
+            "硬卧": "无票 497.5元",
+            "无座": "有票 293.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816237.3028464,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "BXP": {
+      "KMM": [
+        {
+          "train_code": "Z161",
+          "depart_time": "11:20",
+          "arrive_time": "22:02",
+          "duration": "34:42",
+          "seats": {
+            "硬卧": "无票 536元",
+            "软卧": "剩余12张票 849元",
+            "硬座": "无票 317元",
+            "无座": "有票 317元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816237.7468746,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "22:30",
+          "arrive_time": "10:36",
+          "duration": "36:06",
+          "seats": {
+            "硬卧": "无票 536元",
+            "软卧": "剩余11张票 849元",
+            "硬座": "无票 317元",
+            "无座": "有票 317元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816237.7583802,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "BJP": {
+      "KMM": [
+        {
+          "train_code": "Z161",
+          "depart_time": "11:20",
+          "arrive_time": "22:02",
+          "duration": "34:42",
+          "seats": {
+            "硬卧": "无票 536元",
+            "软卧": "剩余12张票 849元",
+            "硬座": "无票 317元",
+            "无座": "有票 317元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816245.5935588,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "22:30",
+          "arrive_time": "10:36",
+          "duration": "36:06",
+          "seats": {
+            "硬卧": "无票 536元",
+            "软卧": "剩余11张票 849元",
+            "硬座": "无票 317元",
+            "无座": "有票 317元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816245.600357,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "ZZF": {
+      "KMM": [
+        {
+          "train_code": "Z325",
+          "depart_time": "03:30",
+          "arrive_time": "10:50",
+          "duration": "31:20",
+          "seats": {
+            "硬座": "无票 263.5元",
+            "软卧": "无票 704.5元",
+            "硬卧": "无票 446.5元",
+            "无座": "有票 263.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816247.88423,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "04:42",
+          "arrive_time": "10:36",
+          "duration": "29:54",
+          "seats": {
+            "硬卧": "无票 446.5元",
+            "软卧": "无票 704.5元",
+            "硬座": "无票 263.5元",
+            "无座": "有票 263.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816247.8910878,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "17:44",
+          "arrive_time": "22:02",
+          "duration": "28:18",
+          "seats": {
+            "硬卧": "无票 446.5元",
+            "软卧": "无票 704.5元",
+            "硬座": "无票 263.5元",
+            "无座": "有票 263.5元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816247.8966568,
+          "train_type": "Z"
+        }
+      ],
+      "CSQ": [
+        {
+          "train_code": "K1159",
+          "depart_time": "00:17",
+          "arrive_time": "11:13",
+          "duration": "10:56",
+          "seats": {
+            "硬卧": "有票 200元",
+            "软卧": "无票 312元",
+            "硬座": "有票 115元",
+            "无座": "有票 115元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816526.9279258,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T21",
+          "depart_time": "00:37",
+          "arrive_time": "09:58",
+          "duration": "09:21",
+          "seats": {
+            "硬卧": "无票 200元",
+            "软卧": "无票 312元",
+            "硬座": "有票 115元",
+            "无座": "无票 115元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816526.9349225,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z335",
+          "depart_time": "02:24",
+          "arrive_time": "10:38",
+          "duration": "08:14",
+          "seats": {
+            "硬座": "有票 115元",
+            "软卧": "无票 312元",
+            "硬卧": "剩余2张票 200元",
+            "无座": "无票 115元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816526.9415627,
+          "train_type": "Z"
+        }
+      ],
+      "ZZQ": [
+        {
+          "train_code": "K1159",
+          "depart_time": "00:17",
+          "arrive_time": "12:11",
+          "duration": "11:54",
+          "seats": {
+            "硬卧": "有票 215元",
+            "软卧": "无票 336元",
+            "硬座": "有票 124元",
+            "无座": "有票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816527.432928,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T21",
+          "depart_time": "00:37",
+          "arrive_time": "10:38",
+          "duration": "10:01",
+          "seats": {
+            "硬卧": "无票 215元",
+            "软卧": "无票 336元",
+            "硬座": "有票 124元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816527.4405785,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z335",
+          "depart_time": "02:24",
+          "arrive_time": "11:19",
+          "duration": "08:55",
+          "seats": {
+            "硬座": "有票 124元",
+            "软卧": "无票 336元",
+            "硬卧": "剩余2张票 215元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816527.4482865,
+          "train_type": "Z"
+        }
+      ],
+      "UMW": [
+        {
+          "train_code": "Z325",
+          "depart_time": "03:30",
+          "arrive_time": "06:53",
+          "duration": "27:23",
+          "seats": {
+            "硬座": "有票 229元",
+            "软卧": "无票 613元",
+            "硬卧": "无票 389元",
+            "无座": "有票 229元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816528.873419,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "04:42",
+          "arrive_time": "06:40",
+          "duration": "25:58",
+          "seats": {
+            "硬卧": "无票 389元",
+            "软卧": "无票 613元",
+            "硬座": "有票 229元",
+            "无座": "无票 229元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816528.8809466,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "17:44",
+          "arrive_time": "18:11",
+          "duration": "24:27",
+          "seats": {
+            "硬卧": "无票 389元",
+            "软卧": "无票 613元",
+            "硬座": "有票 229元",
+            "无座": "无票 229元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816528.8874738,
+          "train_type": "Z"
+        }
+      ],
+      "XFN": [
+        {
+          "train_code": "K261",
+          "depart_time": "02:12",
+          "arrive_time": "09:37",
+          "duration": "07:25",
+          "seats": {
+            "硬卧": "有票 133元",
+            "软卧": "剩余2张票 205元",
+            "硬座": "有票 75元",
+            "无座": "无票 75元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816531.738492,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K257",
+          "depart_time": "05:19",
+          "arrive_time": "11:49",
+          "duration": "06:30",
+          "seats": {
+            "硬卧": "有票 129元",
+            "软卧": "剩余6张票 197元",
+            "硬座": "有票 72元",
+            "无座": "无票 72元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816531.7465014,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K283",
+          "depart_time": "09:25",
+          "arrive_time": "16:21",
+          "duration": "06:56",
+          "seats": {
+            "硬座": "有票 72元",
+            "软卧": "无票 197元",
+            "硬卧": "有票 129元",
+            "无座": "无票 72元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816531.7543344,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "WHN": {
+      "KMM": [
+        {
+          "train_code": "Z325",
+          "depart_time": "08:47",
+          "arrive_time": "10:50",
+          "duration": "26:03",
+          "seats": {
+            "硬座": "无票 217元",
+            "软卧": "剩余1张票 585元",
+            "硬卧": "无票 370元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816248.3831394,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "09:45",
+          "arrive_time": "10:36",
+          "duration": "24:51",
+          "seats": {
+            "硬卧": "无票 370元",
+            "软卧": "无票 585元",
+            "硬座": "无票 217元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816248.3886416,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "22:33",
+          "arrive_time": "22:02",
+          "duration": "23:29",
+          "seats": {
+            "硬卧": "无票 370元",
+            "软卧": "无票 585元",
+            "硬座": "无票 217元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-11",
+          "cached_timestamp": 1775816248.395311,
+          "train_type": "Z"
+        }
+      ],
+      "SJP": [
+        {
+          "train_code": "Z78",
+          "depart_time": "01:02",
+          "arrive_time": "09:20",
+          "duration": "08:18",
+          "seats": {
+            "硬座": "无票 124元",
+            "软卧": "无票 336元",
+            "硬卧": "无票 215元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816543.4490848,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T370",
+          "depart_time": "02:05",
+          "arrive_time": "12:35",
+          "duration": "10:30",
+          "seats": {
+            "硬座": "有票 124元",
+            "硬卧": "无票 215元",
+            "软卧": "无票 336元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816543.4541106,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K600",
+          "depart_time": "03:52",
+          "arrive_time": "17:14",
+          "duration": "13:22",
+          "seats": {
+            "硬座": "有票 124元",
+            "硬卧": "剩余2张票 215元",
+            "软卧": "无票 336元",
+            "无座": "无票 124元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816543.457596,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "HKN": {
+      "KMM": [
+        {
+          "train_code": "Z325",
+          "depart_time": "08:47",
+          "arrive_time": "10:50",
+          "duration": "26:03",
+          "seats": {
+            "硬座": "有票 217元",
+            "软卧": "无票 585元",
+            "硬卧": "无票 370元",
+            "无座": "有票 217元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816546.2429893,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z53",
+          "depart_time": "09:45",
+          "arrive_time": "10:36",
+          "duration": "24:51",
+          "seats": {
+            "硬卧": "无票 370元",
+            "软卧": "无票 585元",
+            "硬座": "有票 217元",
+            "无座": "无票 217元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816546.251475,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "Z161",
+          "depart_time": "22:33",
+          "arrive_time": "22:02",
+          "duration": "23:29",
+          "seats": {
+            "硬卧": "无票 370元",
+            "软卧": "无票 585元",
+            "硬座": "有票 217元",
+            "无座": "无票 217元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816546.2600372,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "HYQ": {
+      "WCN": [
+        {
+          "train_code": "Z286",
+          "depart_time": "00:10",
+          "arrive_time": "05:52",
+          "duration": "05:42",
+          "seats": {
+            "硬卧": "无票 133元",
+            "软卧": "无票 205元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816547.8532546,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "K1296",
+          "depart_time": "00:22",
+          "arrive_time": "07:53",
+          "duration": "07:31",
+          "seats": {
+            "硬座": "有票 75元",
+            "软卧": "剩余2张票 205元",
+            "硬卧": "有票 133元",
+            "无座": "无票 75元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816547.8619125,
+          "train_type": "Z"
+        },
+        {
+          "train_code": "T180",
+          "depart_time": "00:50",
+          "arrive_time": "07:34",
+          "duration": "06:44",
+          "seats": {
+            "硬座": "有票 75元",
+            "硬卧": "有票 133元",
+            "软卧": "剩余2张票 205元",
+            "无座": "无票 75元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816547.866521,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "ZDN": {
+      "KMM": [
+        {
+          "train_code": "Z53",
+          "depart_time": "06:21",
+          "arrive_time": "10:36",
+          "duration": "28:15",
+          "seats": {
+            "硬卧": "无票 414元",
+            "软卧": "无票 654元",
+            "硬座": "有票 243元",
+            "无座": "无票 243元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816561.6598685,
+          "train_type": "Z"
+        }
+      ]
+    },
+    "NCG": {
+      "KMM": [
+        {
+          "train_code": "K1235",
+          "depart_time": "18:10",
+          "arrive_time": "22:22",
+          "duration": "28:12",
+          "seats": {
+            "硬卧": "无票 363元",
+            "软卧": "剩余5张票 572元",
+            "硬座": "有票 213元",
+            "无座": "有票 213元"
+          },
+          "cached_date": "2026-04-14",
+          "cached_timestamp": 1775816562.3468316,
+          "train_type": "Z"
+        }
+      ]
+    }
+  },
+  "station_names": {
+    "XXF": "新乡",
+    "KMM": "昆明"
+  }
+}
