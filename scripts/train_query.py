@@ -12,9 +12,9 @@ from mcp.client.sse import sse_client
 
 MCP_URL = "http://localhost:8080/sse"
 CACHE_FILE = os.path.join(os.path.dirname(__file__), "train_cache_graph.json")
-CACHE_EXPIRE_DAYS = 2  # 边缓存有效期（天）
+CACHE_EXPIRE_DAYS = 2
 
-# -------------------- MCP 核心交互 (不变) --------------------
+# -------------------- MCP 核心交互 --------------------
 async def call_mcp_tool(session, tool_name, arguments):
     result = await session.call_tool(tool_name, arguments)
     for c in result.content:
@@ -78,7 +78,7 @@ async def query_interline(session, from_code, to_code, date, train_types=None):
         arguments["trainFilterFlags"] = train_types
     return await call_mcp_tool(session, "get-interline-tickets", arguments)
 
-# -------------------- 文本解析 (不变) --------------------
+# -------------------- 文本解析 --------------------
 def parse_direct_blocks(raw_text):
     lines = raw_text.splitlines()
     blocks, current_block = [], []
@@ -124,24 +124,28 @@ def filter_by_train_types(block, allowed_types):
         if code[0] not in allowed_types: return False
     return True
 
-def filter_by_via(blocks, via_city, exclude_same_train=True, allowed_train_types=None):
+def filter_by_via(blocks, via_city, exclude_same_train=False, allowed_train_types=None):
     matched = []
+    clean_via = via_city.strip()
     for block in blocks:
-        if exclude_same_train and is_same_train_transfer(block): continue
-        if not filter_by_train_types(block, allowed_train_types): continue
+        if exclude_same_train and is_same_train_transfer(block):
+            continue
+        if not filter_by_train_types(block, allowed_train_types):
+            continue
         first_line = block.split('\n')[0]
         match = re.search(r'\|\s*([^|]+)\s*->\s*([^|]+)\s*->\s*([^|]+)\s*\|', first_line)
         if match:
             transfer_st = match.group(2).strip()
-            if via_city in transfer_st: matched.append(block)
+            if clean_via in transfer_st or transfer_st in clean_via:
+                matched.append(block)
     return matched
 
-# -------------------- 图缓存管理 (核心新功能) --------------------
+# -------------------- 图缓存管理 (保持不变) --------------------
 class TrainCacheGraph:
     def __init__(self, filepath=CACHE_FILE):
         self.filepath = filepath
-        self.graph = defaultdict(lambda: defaultdict(list))  # {from_code: {to_code: [edge_info]}}
-        self.station_names = {}  # code -> name
+        self.graph = defaultdict(lambda: defaultdict(list))
+        self.station_names = {}
         self.load()
 
     def load(self):
@@ -149,7 +153,6 @@ class TrainCacheGraph:
             try:
                 with open(self.filepath, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    # 重建图结构
                     for from_code, to_dict in data.get('graph', {}).items():
                         for to_code, edges in to_dict.items():
                             self.graph[from_code][to_code] = edges
@@ -166,7 +169,6 @@ class TrainCacheGraph:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
     def add_edge(self, from_code, to_code, train_info, date, train_type):
-        """添加或更新一条边（车次信息）"""
         edge = {
             'train_code': train_info.get('train_code', ''),
             'depart_time': train_info.get('depart_time', ''),
@@ -177,7 +179,6 @@ class TrainCacheGraph:
             'cached_timestamp': time.time(),
             'train_type': train_type
         }
-        # 检查是否已存在相同车次，存在则更新时间戳
         existing = self.graph[from_code][to_code]
         for i, e in enumerate(existing):
             if e['train_code'] == edge['train_code']:
@@ -188,25 +189,20 @@ class TrainCacheGraph:
         self.save()
 
     def get_edges(self, from_code, to_code, date=None, train_types=None, max_age_days=CACHE_EXPIRE_DAYS):
-        """获取两点间的有效缓存边（未过期且符合类型）"""
         edges = self.graph.get(from_code, {}).get(to_code, [])
         valid = []
         now = time.time()
         for e in edges:
-            # 检查时效
             if now - e['cached_timestamp'] > max_age_days * 86400:
                 continue
-            # 检查日期匹配（同日或相近？此处简化，只要求缓存日期与查询日期相同，实际可放宽）
             if date and e['cached_date'] != date:
                 continue
-            # 检查类型
             if train_types and e['train_type'][0] not in train_types:
                 continue
             valid.append(e)
         return valid
 
     def find_paths(self, start_code, end_code, date, train_types, max_hops=4):
-        """在缓存图中搜索路径（BFS）"""
         queue = deque()
         queue.append((start_code, []))
         visited = set()
@@ -222,7 +218,6 @@ class TrainCacheGraph:
                                (not train_types or e['train_type'][0] in train_types)]
                 if not valid_edges:
                     continue
-                # 选择第一个有效边作为代表（实际可返回多个方案，这里简化）
                 edge = valid_edges[0]
                 step = {
                     'from_code': cur,
@@ -241,42 +236,29 @@ class TrainCacheGraph:
                     queue.append((nxt, new_path))
         return found
 
-    def invalidate_edge(self, from_code, to_code, train_code):
-        """删除指定边（车次失效时）"""
-        if from_code in self.graph and to_code in self.graph[from_code]:
-            self.graph[from_code][to_code] = [e for e in self.graph[from_code][to_code] if e['train_code'] != train_code]
-            self.save()
-
     def update_station_name(self, code, name):
         self.station_names[code] = name
         self.save()
 
-# 全局缓存实例
 cache_graph = TrainCacheGraph()
 
-# -------------------- 增强的票务获取（集成缓存） --------------------
+# -------------------- 票务获取（带缓存）--------------------
 async def get_tickets_between(session, from_code, to_code, date, train_types, use_cache=True):
-    # 先查缓存
     if use_cache:
         cached_edges = cache_graph.get_edges(from_code, to_code, date, train_types)
         if cached_edges:
-            # 简单验证：检查第一个车次是否仍有余票（可抽样）
             edge = cached_edges[0]
-            # 快速API验证（可选，这里为了效率默认信任缓存）
-            # 如需验证，可调用 query_direct 并比对
             print(f"  使用缓存边: {from_code}->{to_code} {edge['train_code']}", file=sys.stderr)
             return {
                 'type': 'direct',
                 'trains': [format_cached_edge(edge)],
                 'from_cache': True
             }
-    # 缓存未命中，实时查询
     direct_raw = await query_direct(session, from_code, to_code, date, train_types)
     if direct_raw and "Error:" not in direct_raw:
         blocks = parse_direct_blocks(direct_raw)
         blocks = [b for b in blocks if filter_by_train_types(b, train_types)]
         if blocks:
-            # 将车次信息存入缓存图
             for block in blocks[:3]:
                 extract_and_cache_edges(block, from_code, to_code, date, train_types)
             return {"type": "direct", "trains": blocks[:5]}
@@ -289,7 +271,6 @@ async def get_tickets_between(session, from_code, to_code, date, train_types, us
     return None
 
 def format_cached_edge(edge):
-    """将缓存的边数据格式化为类似原始文本块"""
     lines = [
         f"{edge['train_code']} {edge['from_code']} -> {edge['to_code']} {edge['depart_time']} -> {edge['arrive_time']} 历时：{edge['duration']}",
     ]
@@ -298,7 +279,6 @@ def format_cached_edge(edge):
     return '\n'.join(lines)
 
 def extract_and_cache_edges(block, from_code, to_code, date, train_types):
-    """从原始文本块中提取车次信息并存入缓存图"""
     lines = block.split('\n')
     first_line = lines[0]
     match = re.match(r'^([GDCZTK]\d+)\s+.*?(\d{2}:\d{2})\s*->\s*(\d{2}:\d{2})\s+历时：(\d{2}:\d{2})', first_line)
@@ -322,8 +302,89 @@ def extract_and_cache_edges(block, from_code, to_code, date, train_types):
     }
     cache_graph.add_edge(from_code, to_code, edge_info, date, train_types[0] if train_types else '')
 
-# -------------------- 智能多跳规划（集成缓存图搜索） --------------------
-ZTK_HUBS = {  # 保留，但缓存图优先
+# -------------------- 新增：分段拼接中转方案 --------------------
+def parse_time(time_str):
+    """将 'HH:MM' 转换为分钟数"""
+    h, m = map(int, time_str.split(':'))
+    return h * 60 + m
+
+def extract_train_info(block):
+    """从直达车次块中提取车次、出发时间、到达时间等关键信息"""
+    lines = block.split('\n')
+    first_line = lines[0]
+    # 格式：Z326 武昌(telecode:WCN) -> 新乡(telecode:XXF) 21:17 -> 03:23 历时：06:06
+    match = re.match(r'^([GDCZTK]\d+)\s+.*?(\d{2}:\d{2})\s*->\s*(\d{2}:\d{2})\s+历时：(\d{2}:\d{2})', first_line)
+    if not match:
+        return None
+    return {
+        'train_code': match.group(1),
+        'depart_time': match.group(2),
+        'arrive_time': match.group(3),
+        'duration': match.group(4),
+        'raw_block': block
+    }
+
+async def segment_combine_via(session, from_code, via_code, to_code, date, train_types):
+    """
+    分段查询并组合中转方案：出发站->途经站 + 途经站->目的站
+    """
+    # 查询第一段
+    direct1_raw = await query_direct(session, from_code, via_code, date, train_types)
+    if not direct1_raw or "Error:" in direct1_raw:
+        return []
+    blocks1 = parse_direct_blocks(direct1_raw)
+    blocks1 = [b for b in blocks1 if filter_by_train_types(b, train_types)]
+    if not blocks1:
+        return []
+
+    # 查询第二段
+    direct2_raw = await query_direct(session, via_code, to_code, date, train_types)
+    if not direct2_raw or "Error:" in direct2_raw:
+        return []
+    blocks2 = parse_direct_blocks(direct2_raw)
+    blocks2 = [b for b in blocks2 if filter_by_train_types(b, train_types)]
+    if not blocks2:
+        return []
+
+    # 提取车次信息
+    trains1 = []
+    for b in blocks1:
+        info = extract_train_info(b)
+        if info:
+            info['arrive_minutes'] = parse_time(info['arrive_time'])
+            trains1.append(info)
+    trains2 = []
+    for b in blocks2:
+        info = extract_train_info(b)
+        if info:
+            info['depart_minutes'] = parse_time(info['depart_time'])
+            trains2.append(info)
+
+    # 组合：要求第一程到达时间早于第二程出发时间，且换乘时间 ≥ 30 分钟
+    MIN_TRANSFER = 30  # 最小换乘时间（分钟）
+    combined = []
+    for t1 in trains1:
+        for t2 in trains2:
+            # 考虑跨天情况：如果到达时间小于出发时间，可能跨天了，这里简单处理为当天到达早于出发则跳过
+            # 对于过夜车次，可能需要更复杂处理，但普速列车通常不会出现负间隔
+            if t1['arrive_minutes'] + MIN_TRANSFER <= t2['depart_minutes']:
+                transfer_wait = t2['depart_minutes'] - t1['arrive_minutes']
+                wait_h = transfer_wait // 60
+                wait_m = transfer_wait % 60
+                wait_str = f"{wait_h}小时{wait_m}分钟" if wait_h > 0 else f"{wait_m}分钟"
+                # 构造模拟的中转方案块
+                scheme_lines = [
+                    f"{date} {t1['depart_time']} -> {date} {t2['arrive_time']} | {from_code} -> {via_code} -> {to_code} | 同站换乘 | {wait_str} | 总历时待计算",
+                    "",
+                    f"        车次|出发站 -> 到达站|出发时间 -> 到达时间|历时",
+                    t1['raw_block'],
+                    t2['raw_block']
+                ]
+                combined.append('\n'.join(scheme_lines))
+    return combined
+
+# -------------------- 多跳规划 --------------------
+ZTK_HUBS = {
     "新乡": "XXF", "郑州": "ZZF", "洛阳": "LYF", "西安": "XAY",
     "武汉": "WHN", "武昌": "WCN", "汉口": "HKN", "长沙": "CSQ",
     "株洲": "ZZQ", "衡阳": "HYQ", "怀化": "HHQ", "贵阳": "GIW",
@@ -340,13 +401,10 @@ async def auto_plan_route(session, start_station, end_station, date, train_types
     cache_graph.update_station_name(start_code, start_station)
     cache_graph.update_station_name(end_code, end_station)
 
-    # 1. 优先在缓存图中搜索路径
     if not force_refresh:
         cached_paths = cache_graph.find_paths(start_code, end_code, date, train_types, max_hops)
         if cached_paths:
             print(f"✅ 从缓存图中找到 {len(cached_paths)} 条路径", file=sys.stderr)
-            # 快速验证第一条路径的关键边（可选）
-            # 此处为简洁，直接信任缓存
             routes = []
             for path in cached_paths[:3]:
                 legs = []
@@ -372,7 +430,6 @@ async def auto_plan_route(session, start_station, end_station, date, train_types
                 "cached": True
             }
 
-    # 2. 缓存未命中，执行实时BFS探索（利用枢纽站）
     print("🔄 缓存未命中，开始实时探索...", file=sys.stderr)
     code_to_name = {v: k for k, v in ZTK_HUBS.items()}
     queue = deque()
@@ -414,7 +471,7 @@ async def auto_plan_route(session, start_station, end_station, date, train_types
         "cached": False
     }
 
-# -------------------- 原有功能函数（稍作适配） --------------------
+# -------------------- 主查询（核心修改） --------------------
 async def async_main(session, from_loc, to_loc, date=None, via_city=None, train_types=None):
     if date is None:
         date = await get_current_date(session)
@@ -425,13 +482,29 @@ async def async_main(session, from_loc, to_loc, date=None, via_city=None, train_
         return {"error": f"无法获取车站代码"}
 
     if via_city:
+        # 先尝试原生中转接口
         raw = await query_interline(session, from_code, to_code, date, train_types)
-        if not raw or "Error:" in raw: return {"error": raw or "无中转方案"}
-        blocks = parse_transfer_blocks(raw)
-        filtered = filter_by_via(blocks, via_city, True, train_types)
-        return {"query_type": "interline_with_via", "date": date, "from": from_loc, "to": to_loc,
-                "via": via_city, "train_types": train_types, "total_schemes": len(blocks),
-                "matched_schemes": len(filtered), "schemes": filtered}
+        if raw and "Error:" not in raw:
+            blocks = parse_transfer_blocks(raw)
+            filtered = filter_by_via(blocks, via_city, exclude_same_train=False, allowed_train_types=train_types)
+            if filtered:
+                return {"query_type": "interline_with_via", "date": date, "from": from_loc, "to": to_loc,
+                        "via": via_city, "train_types": train_types, "total_schemes": len(blocks),
+                        "matched_schemes": len(filtered), "schemes": filtered}
+        # 原生接口无结果（尤其是ZTK情况），降级为分段拼接
+        print(f"⚠️ 原生中转无结果，尝试分段拼接...", file=sys.stderr)
+        via_code = await get_station_code(session, via_city)
+        if not via_code:
+            return {"error": f"无法获取途经站代码: {via_city}"}
+        combined = await segment_combine_via(session, from_code, via_code, to_code, date, train_types)
+        if combined:
+            return {"query_type": "interline_with_via", "date": date, "from": from_loc, "to": to_loc,
+                    "via": via_city, "train_types": train_types, "total_schemes": len(combined),
+                    "matched_schemes": len(combined), "schemes": combined, "fallback": "segmented"}
+        else:
+            return {"error": "未找到可拼接的中转方案"}
+
+    # 无 via 的正常流程
     direct_raw = await query_direct(session, from_code, to_code, date, train_types)
     if direct_raw and "Error:" not in direct_raw:
         blocks = [b for b in parse_direct_blocks(direct_raw) if filter_by_train_types(b, train_types)]
